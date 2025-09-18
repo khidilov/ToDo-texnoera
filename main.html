@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ediləcəklər siyahısı</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="leftWrapper">
+            <div class="avatarBox">
+              <img src="./assets/images/avatar.png" alt="User avatar" />
+            </div>
+            <div class="addsOn">
+              <p class="greeting">
+                Salam <span class="userFirstName">istifadəçi adı</span>
+              </p>
+              <p class="summary">
+                <span class="quantity">3</span> ediləcək qalıb
+              </p>
+            </div>
+          </div>
+          <p class="maintext">Ediləcəklər</p>
+          <div class="leftwrapper">
+            <a href="./index.html" class="quit">Çıxış</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <input
+            placeholder="Nə etmək istəyirsiniz?"
+            type="text"
+            class="creatingArea"
+          />
+          <button class="createItem" type="button">
+            <span class="purpledot"><span class="plus">+</span></span>
+            <span class="yeni">Yeni</span>
+          </button>
+        </div>
+        <div class="row taskbox">
+          <ul class="tasks">
+            <li class="task" data-edstatus="0">
+              <div class="btnGroup">
+                <button class="bin">
+                  <img src="./assets/images/Frame.svg" alt="" />
+                </button>
+                <span class="checkbox">
+                  <input type="checkbox" class="xana"
+                /></span>
+              </div>
+              <input class="taskContent" type="text" disabled value="Task-1" />
+              <button class="saveBtn" type="button">Dəyiş</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>

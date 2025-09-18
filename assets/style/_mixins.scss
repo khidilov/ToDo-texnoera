@@ -1,0 +1,26 @@
+@use "variables" as *;
+@mixin title {
+  font-size: 7.2rem;
+  color: $textColor;
+  font-weight: 700;
+}
+@mixin subtitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $textColor;
+}
+
+@mixin ctaButton {
+  font-size: 2.4rem;
+  background-color: $accentColor;
+  color: $btnContnet;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.5rem;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: darken($color: $accentColor, $amount: 20);
+  }
+}
+@mixin ordinaryText {
+  font-size: 2.4rem;
+}

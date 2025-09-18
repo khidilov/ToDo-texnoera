@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+img,
+svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .row {
+  display: flex;
+}
+
+p span {
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titlewrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.titlewrapper .title {
+  font-size: 7.2rem;
+  color: rgb(94, 94, 94);
+  font-weight: 700;
+}
+.titlewrapper .subtitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(94, 94, 94);
+}
+.titlewrapper .start {
+  margin-top: 2.9rem;
+  font-size: 2.4rem;
+  background-color: rgb(180, 122, 234);
+  color: rgb(255, 255, 255);
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.5rem;
+  transition: background 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.titlewrapper .start:hover {
+  background-color: rgb(130.2987012987, 34.6363636364, 219.3636363636);
+}
+
+header .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .row .leftWrapper {
+  display: flex;
+  align-items: center;
+}
+header .container .row .leftWrapper .avatarBox {
+  height: 7.4rem;
+  width: 7.4rem;
+}
+header .container .row .leftWrapper .addsOn {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+}
+header .container .row .leftWrapper .addsOn .greeting {
+  font-weight: 700;
+  color: rgb(94, 94, 94);
+}
+header .container .row .leftWrapper .addsOn .summary {
+  color: rgb(239, 97, 97);
+}
+header .container .row .maintext {
+  font-size: 7.2rem;
+  color: rgb(94, 94, 94);
+  font-weight: 700;
+  font-size: 6.4rem;
+  transform: translateX(-20%);
+}
+header .container .row .leftwrapper .quit {
+  color: rgb(180, 122, 234);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(94, 94, 94);
+}
+
+main .container .row {
+  justify-content: center;
+  margin-top: 8rem;
+}
+main .container .row input {
+  width: 54%;
+  height: 5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 2.4rem;
+  padding-left: 4.6rem;
+}
+main .container .row button {
+  border: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  cursor: pointer;
+}
+main .container .row button .purpledot {
+  margin-left: 1.1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgb(180, 122, 234);
+  display: inline-block;
+}
+main .container .row button .purpledot .plus {
+  font-size: 2.4rem;
+  color: white;
+}
+main .container .row button .yeni {
+  font-size: 2.4rem;
+  color: rgb(180, 122, 234);
+}
+main .container .taskbox .tasks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+main .container .taskbox .tasks .task {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+main .container .taskbox .tasks .task .btnGroup {
+  display: flex;
+  gap: 1.7rem;
+}
+main .container .taskbox .tasks .task span {
+  display: inline-block;
+}
+main .container .taskbox .tasks .task .bin {
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.4rem;
+}
+main .container .taskbox .tasks .task .bin img {
+  transition: filter 0.5s ease;
+}
+main .container .taskbox .tasks .task .bin img:hover {
+  filter: invert(29%) sepia(90%) saturate(500%) hue-rotate(10deg);
+}
+main .container .taskbox .tasks .task .checkbox input {
+  width: 2.4rem;
+  height: 2.4rem;
+  accent-color: rgb(180, 122, 234);
+}
+main .container .taskbox .tasks .task .taskContent {
+  margin-left: 2.1rem;
+  padding: 0;
+  border: 1px solid transparent;
+}
+main .container .taskbox .tasks .task .saveBtn {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgb(94, 94, 94);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(180, 122, 234);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+@use "mixins" as m;
+
+.titlewrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  .title {
+    @include m.title;
+  }
+  .subtitle {
+    @include m.subtitle;
+  }
+  .start {
+    margin-top: 2.9rem;
+    @include m.ctaButton;
+    width: fit-content;
+  }
+}

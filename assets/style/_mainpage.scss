@@ -1,0 +1,136 @@
+@use "mixins" as m;
+@use "variables" as *;
+header {
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .leftWrapper {
+        display: flex;
+        align-items: center;
+        .avatarBox {
+          height: 7.4rem;
+          width: 7.4rem;
+        }
+        .addsOn {
+          display: flex;
+          flex-direction: column;
+          @include m.ordinaryText;
+          .greeting {
+            font-weight: 700;
+            color: rgba(94, 94, 94, 1);
+          }
+          .summary {
+            color: rgba(239, 97, 97, 1);
+          }
+        }
+      }
+      .maintext {
+        @include m.title;
+        font-size: 6.4rem;
+        transform: translateX(-20%);
+      }
+      .leftwrapper {
+        .quit {
+          color: $accentColor;
+          @include m.subtitle;
+        }
+      }
+    }
+  }
+}
+main {
+  .container {
+    .row {
+      justify-content: center;
+      margin-top: 8rem;
+
+      input {
+        width: 54%;
+        height: 5rem;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 1);
+        font-size: 2.4rem;
+        padding-left: 4.6rem;
+      }
+      button {
+        border: none;
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        cursor: pointer;
+        .purpledot {
+          margin-left: 1.1rem;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          background-color: $accentColor;
+          display: inline-block;
+          .plus {
+            font-size: 2.4rem;
+            color: white;
+          }
+        }
+        .yeni {
+          font-size: 2.4rem;
+          color: $accentColor;
+        }
+      }
+    }
+    .taskbox {
+      .tasks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        gap: 1.2rem;
+        .task {
+          .btnGroup {
+            display: flex;
+            gap: 1.7rem;
+          }
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: center;
+          gap: 1rem;
+          span {
+            display: inline-block;
+          }
+          .bin {
+            display: inline-block;
+            width: 2.8rem;
+            height: 2.4rem;
+
+            img {
+              transition: filter 0.5s ease;
+              &:hover {
+                filter: invert(29%) sepia(90%) saturate(500%) hue-rotate(10deg);
+              }
+            }
+          }
+
+          .checkbox input {
+            width: 2.4rem;
+            height: 2.4rem;
+            accent-color: $accentColor;
+          }
+          .taskContent {
+            margin-left: 2.1rem;
+            padding: 0;
+            border: 1px solid transparent;
+          }
+          .saveBtn {
+            @include m.subtitle;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: $accentColor;
+          }
+        }
+      }
+    }
+  }
+}
