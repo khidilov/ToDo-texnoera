@@ -8,7 +8,7 @@ const tasks = [];
 
 // Yeni tapşırığın yaradılması
 const addTask = () => {
-  if (!field.value) return;
+  if (!field.value.trim()) return;
   const task = document.createElement("li");
   task.className = "task";
   task.dataset.edstatus = "0";
