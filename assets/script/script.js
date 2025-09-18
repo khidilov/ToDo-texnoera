@@ -20,7 +20,7 @@ const addTask = () => {
                   <input type="checkbox" class="xana"
                 /></span>
               </div>
-              <input class="taskContent" type="text" disabled value="Task-1" />
+              <input class="taskContent" type="text" disabled value="${field.value}" />
               <button class="saveBtn" type="button">Dəyiş</button>`;
   tasksDom.prepend(task);
   field.value = "";
