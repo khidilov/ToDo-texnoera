@@ -4,8 +4,6 @@ const create = document.querySelector(".createItem");
 const field = document.querySelector(".creatingArea");
 const tasksDom = document.querySelector(".tasks");
 
-const tasks = [];
-
 // Yeni tapşırığın yaradılması
 const addTask = () => {
   if (!field.value.trim()) return;
@@ -40,7 +38,7 @@ tasksDom.addEventListener("click", (e) => {
   const input = e.target.closest("li").querySelector(".taskContent");
   const listitem = e.target.closest("li");
   const saveBtn = e.target.closest(".saveBtn");
-  const checkbox = e.target.closest(".xana");
+
   if (!listitem) return;
   // Tapşırığın silinməsi.
   if (e.target.closest(".bin")) {
