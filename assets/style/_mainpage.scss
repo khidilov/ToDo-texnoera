@@ -42,6 +42,7 @@ header {
   }
 }
 main {
+  height: 78vh;
   .container {
     .row {
       justify-content: center;
@@ -132,5 +133,12 @@ main {
         }
       }
     }
+  }
+}
+footer {
+  text-align: center;
+
+  p {
+    font-size: 1.4rem;
   }
 }

@@ -24,7 +24,6 @@ const addTask = () => {
   field.value = "";
   counter();
 };
-
 create.addEventListener("click", addTask);
 
 field.addEventListener("keydown", (e) => {

@@ -102,6 +102,9 @@ header .container .row .leftwrapper .quit {
   color: rgb(94, 94, 94);
 }
 
+main {
+  height: 78vh;
+}
 main .container .row {
   justify-content: center;
   margin-top: 8rem;
@@ -187,4 +190,11 @@ main .container .taskbox .tasks .task .saveBtn {
   font-size: 1.8rem;
   font-weight: 500;
   color: rgb(180, 122, 234);
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
