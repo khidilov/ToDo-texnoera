@@ -10,7 +10,7 @@ const tasks = [];
 const addTask = () => {
   if (!field.value) return;
   const task = document.createElement("li");
-  task.className = "task";~
+  task.className = "task";
   task.dataset.edstatus = "0";
   task.innerHTML = `<div class="btnGroup">
                 <button class="bin">
@@ -37,7 +37,6 @@ field.addEventListener("keydown", (e) => {
 
 // Event delegation
 tasksDom.addEventListener("click", (e) => {
-  let isEditing = Number(e.target.closest("li").dataset.edstatus);
   const input = e.target.closest("li").querySelector(".taskContent");
   const listitem = e.target.closest("li");
   const saveBtn = e.target.closest(".saveBtn");
@@ -64,8 +63,6 @@ tasksDom.addEventListener("click", (e) => {
       input.setSelectionRange(input.value.length, input.value.length);
     }
   }
-
-  // Tamamlanmış tapşırıq
 
   // else if (e.target.closest(".saveBtn") && listitem.dataset.edstatus == 0) {
   //   input.removeAttribute("disabled");
